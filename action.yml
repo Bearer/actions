@@ -1,0 +1,14 @@
+name: "Bearer Scanner"
+description: "Scan your source code using Bearer"
+author: "Cédric Fabianski"
+branding:
+  icon: "lock"
+  color: "blue"
+inputs:
+  github_token:
+    description: The GitHub token used to create an authenticated client
+    default: ${{ github.token }}
+    required: false
+runs:
+  using: "docker"
+  image: "Dockerfile"
