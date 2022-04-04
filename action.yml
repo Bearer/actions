@@ -1,5 +1,5 @@
 name: "Bearer"
-description: "Scan your source code using Bearer"
+description: "Scan your source code to discover and classify data flow, and identify data security risks across your applications"
 author: "Cédric Fabianski"
 branding:
   icon: "lock"
