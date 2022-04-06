@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-ARG VERSION=latest
+ARG VERSION=beta
 
 RUN apt-get update && apt-get -y install curl unzip git
 

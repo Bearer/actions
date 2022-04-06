@@ -4,7 +4,7 @@ A [GitHub Action](https://github.com/features/actions) for using [Bearer](https:
 
 You can use the Action as follows:
 
-```yaml
+```yml
 name: Example workflow using Bearer
 
 on:
@@ -19,9 +19,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Bearer
-        uses: bearer/actions@main
+        uses: bearer/actions@beta
         env:
           BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
+          DEBUG: 1
 ```
 
 Made with 💜 by Bearer
