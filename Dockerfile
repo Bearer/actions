@@ -2,7 +2,10 @@ FROM ubuntu:latest
 
 ARG VERSION=latest
 
-RUN apt-get update && apt-get -y install curl unzip git
+RUN apt-get update && \
+  apt-get -y install software-properties-common && \
+  add-apt-repository -y ppa:git-core/ppa && \
+  apt-get -y install curl unzip git
 
 RUN echo "using version ${VERSION}"
 
