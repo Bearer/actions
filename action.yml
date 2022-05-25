@@ -5,6 +5,10 @@ branding:
   icon: "lock"
   color: "blue"
 inputs:
+  version:
+    description: Version of the binary to download.
+    default: latest
+    required: false
   github_token:
     description: The GitHub token used to create an authenticated client
     default: ${{ github.token }}
@@ -12,3 +16,5 @@ inputs:
 runs:
   using: "docker"
   image: "Dockerfile"
+  env:
+    VERSION: ${{ inputs.version }}
