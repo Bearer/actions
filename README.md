@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Bearer
-        uses: bearer/actions@main
+        uses: bearer/actions@v2
         env:
           BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
 ```
