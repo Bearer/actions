@@ -1,11 +1,11 @@
-# Bearer Action
+# Bearer Cloud Action
 
-A [GitHub Action](https://github.com/features/actions) for using [Bearer](https://bearer.com) to scan your codebase.
+A [GitHub Action](https://github.com/features/actions) for using [Bearer Cloud](https://bearer.com) to scan your codebase.
 
 You can use the Action as follows:
 
 ```yaml
-name: Example workflow using Bearer
+name: Example workflow using Bearer Cloud
 
 on:
   schedule:
@@ -18,7 +18,7 @@ jobs:
   security:
     runs-on: ubuntu-latest
     steps:
-      - name: Run Bearer
+      - name: Run Bearer Cloud
         uses: bearer/actions@main
         env:
           BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
